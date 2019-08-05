@@ -13,6 +13,7 @@ Welcome to Day 1 of Code 401: Java! We're excited to have you here. Today's focu
 - Review of Git workflow
 - Overview of Java variables, classes, objects
 - Review of the `main` method
+- Overview of DS&A
 - Lab intro
 
 ## Git and GitHub Warmup
