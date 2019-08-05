@@ -1,5 +1,19 @@
 # Code 401: Advanced Software Development in Java with SpringMVC and AWS
 
+## Schedule Overview
+
+First two weeks: Java as a language, OOP, writing/running/testing Java code
+
+Next two weeks: Java for writing servers, SpringMVC
+
+Midterm project: full-stack Java app with login/auth
+
+Second half of the course: all AWS (with a mix of Java and other languages)
+
+Final project: connecting AWS services
+
+Career coaching workshops are August 23, September 27, and October 4.
+
 ## Schedule example
 
 |Time   | Monday  | Tuesday |Wednesday|Thursday |Friday|
