@@ -10,7 +10,7 @@ The steps in this document are meant to show you one solid workflow. It's a stru
 
 As you get started doing whiteboards, we suggest that you stick to the steps we recommend, in the order that we recommend. Once you gain more confidence in the process of whiteboard interviewing, you are welcome to deviate from this process *at your own risk*. If you find that pieces of the process do not work well for you, or make more sense in a different order, that's allowed! And during an interview, you should always be prepared for an interviewer to ask you to complete steps in a different order than you're used to, or to ask you to clarify your thinking even when your normal process would move on. Listening to and working with your interviewer is always the best option, and you should expect that not every whiteboard interview will go the same way.
 
-For an example of an instructor solving a whiteboard (quickly) with a modified version of this process, see [this YouTube video](https://youtu.be/9KAy1AampQc?t=1386){:target="_blank"}.
+For an example of an instructor solving a whiteboard (quickly) with a modified version of this process, see [this YouTube video](https://youtu.be/9KAy1AampQc?t=1386).
 
 ### 1. Problem Domain
 
@@ -34,7 +34,7 @@ Analyze the space AND time efficiency of the algorithm that you just proposed. Y
 
 ### 5. Pseudocode
 
-Write out pseudocode that defines your algorithm! Use the [pseudocode cheat sheet](./Pseudocode){:target="_blank"} as a guideline to what symbols are acceptable.
+Write out pseudocode that defines your algorithm! Use the [pseudocode cheat sheet](./Pseudocode) as a guideline to what symbols are acceptable.
 
 ### 6. Code
 
