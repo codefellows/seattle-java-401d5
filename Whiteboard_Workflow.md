@@ -34,7 +34,7 @@ Analyze the space AND time efficiency of the algorithm that you just proposed. Y
 
 ### 5. Pseudocode
 
-Write out pseudocode that defines your algorithm! Use the [pseudocode cheat sheet](./Pseudocode) as a guideline to what symbols are acceptable.
+Write out pseudocode that defines your algorithm! Use the [pseudocode cheat sheet](./Pseudocode.md) as a guideline to what symbols are acceptable.
 
 ### 6. Code
 
