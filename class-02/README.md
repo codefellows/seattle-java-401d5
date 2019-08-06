@@ -8,6 +8,8 @@
 
 ## Agenda
 - Announcements
+  - Alternative learning journal assignment is in the syllabus on Canvas; use that any day you prefer a basic retro to the prompt in the assignment.
+  
 - Code review
 - Warmup questions
 - Lecture
