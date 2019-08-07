@@ -4,6 +4,7 @@
 - Announcements
     - Make sure you let us know if you'll be off campus!
     - Fridge cleanout Friday
+    - Please erase boards after your whiteboards!
     - Michelle leaving at 5, right after lecture
 - Code review
     - InsertShift
