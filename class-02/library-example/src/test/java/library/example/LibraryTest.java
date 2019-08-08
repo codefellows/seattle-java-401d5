@@ -23,4 +23,17 @@ public class LibraryTest {
         assertFalse("confinement should not make Ginger happy", Library.doesItMakeGingerHappy("Confinement"));
         assertFalse("no water should not make Ginger happy", Library.doesItMakeGingerHappy("No water"));
     }
+
+    @Test
+    public void testGetAverage() {
+        assertEquals("average of ones should be one", 1.0, Library.getAverage(new int[]{1,1,1}), 0.01);
+        assertEquals("average of numbers in order should be middle",
+                5.0,
+                Library.getAverage(new int[]{3,4,5,6,7}),
+                0.000000001);
+        assertEquals("average of numbers in order should be middle",
+                3.5,
+                Library.getAverage(new int[]{3,4}),
+                0.000000001);
+    }
 }

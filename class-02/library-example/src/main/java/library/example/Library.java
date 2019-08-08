@@ -17,7 +17,7 @@ public class Library {
         sadThings.add("Cats");
         sadThings.add("Confinement");
 
-        sadThings.size()
+        sadThings.size();
 //        String[] sadThings = "No water,Cats,Confinement".split(",");
         for( String sadThing : sadThings ) {
 
@@ -30,4 +30,32 @@ public class Library {
         nums.add(7);
         return true;
     }
+
+    public static double getAverage(int[] nums) { //O(n)
+        int sum = 0;
+        for (int n : nums) { // n
+            sum += n;// 1
+        }
+        return ((double) sum) / ((double) nums.length);
+    }
+
+    public static int[] findArrayWithSmallestAverage(int[][] arrs) {
+        // save best option so far
+        int[] bestSoFar = arrs[0]; // 1
+        // for each array:
+        for (int[] currentArray : arrs) { // runs n times, length of the outer array
+            // get the average of that array
+            if(getAverage(currentArray) < getAverage(bestSoFar)) { // m
+                bestSoFar = currentArray; // 1
+            }
+        }
+        return bestSoFar; // 1
+        // O(1 + n * (m + m + 1) )
+        // O(1 + n * (2m + 1) )
+        // O(1 + 2mn + n)
+        // O(mn + n)
+        // O(n * m)
+        // at the end, return the array that is best so far
+    }
+
 }

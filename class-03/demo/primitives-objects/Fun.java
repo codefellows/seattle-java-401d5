@@ -6,15 +6,18 @@ public class Fun {
         int y = 4;
         int z = x;
         System.out.println(String.format("x: %d, y: %d, z: %d", x, y, z));
-        // x++;
-        // System.out.println(String.format("x: %d, y: %d, z: %d", x, y, z));
+        x++;
+        System.out.println(String.format("x: %d, y: %d, z: %d", x, y, z));
 
-        // String[] arr1 = new String[]{"apple", "banana", "cantaloupe"};
-        // String[] arr2 = new String[]{"dragonfruit", "elderberry", "fig"};
-        // System.out.println(String.format("arr1: %s, arr2: %s", Arrays.toString(arr1), Arrays.toString(arr2)));
-        // String[] arr3 = arr1;
-        // System.out.println(String.format("arr1: %s, arr2: %s, arr3: %s", Arrays.toString(arr1), Arrays.toString(arr2), Arrays.toString(arr3)));
-        // arr1[0] = "apricot";
-        // System.out.println(String.format("arr1: %s, arr2: %s, arr3: %s", Arrays.toString(arr1), Arrays.toString(arr2), Arrays.toString(arr3)));
+        String[] arr1 = new String[]{"apple", "banana", "cantaloupe"};
+        String[] arr2 = new String[]{"dragonfruit", "elderberry", "fig"};
+        String[] arr3 = arr1;
+        System.out.println(String.format("arr1: %s, arr2: %s, arr3: %s", Arrays.toString(arr1), Arrays.toString(arr2), Arrays.toString(arr3)));
+        arr3[0] = "apricot";
+        System.out.println(String.format("arr1: %s, arr2: %s, arr3: %s", Arrays.toString(arr1), Arrays.toString(arr2), Arrays.toString(arr3)));
+
+        String name = "Michelle";
+        String name2 = name;
+        name = name + " is great";
     }
 }
