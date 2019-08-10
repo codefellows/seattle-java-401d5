@@ -21,7 +21,7 @@ public class Bitmap {
     }
 
     // first transform
-    public void paintItBlack() {
+    public void paintItPurple() {
         for (int i = 0; i < this.imageData.getWidth(); i++) {
             for (int j = 0; j < this.imageData.getHeight(); j++) {
                 this.imageData.setRGB(i, j,  new Color(245, 119, 250).getRGB());

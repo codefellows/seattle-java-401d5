@@ -11,11 +11,19 @@ import java.io.IOException;
 public class App {
 
     public static void main(String[] args) throws IOException {
-        BufferedImage i = ImageIO.read(new File("src/main/resources/Coffee.bmp"));
+        System.out.println(args[0]);
+        BufferedImage i = ImageIO.read(new File(args[0]));
         Bitmap myBitmap = new Bitmap(i);
         // transforms happen here? eventually
-        myBitmap.paintItBlack();
-        myBitmap.writeToFile("src/main/resources/CoffeePaintedBlack.bmp");
+        if(args[2].equals("purple")) {
+            myBitmap.paintItPurple();
+        } else if (args[2].equals("none")) {
+            // don't do any transforms
+        } else {
+            System.out.println("Please specify a valid transform.");
+            return;
+        }
+        myBitmap.writeToFile(args[1]);
 
     }
 }
