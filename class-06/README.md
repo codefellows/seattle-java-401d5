@@ -2,9 +2,10 @@
 
 ## Agenda
 - Announcements
-  - Feedback results review
+  - Please [sign up for 1:1s!](https://docs.google.com/spreadsheets/d/10D4FKiSP_rXmCXyiECEz9GzyaortWa5dpM8uRZLzmck/edit#gid=0)
   - First Career Coaching workshop will be one week from Friday, on Aug 23
     - Career coaching assignments due on or before that day will lock on Friday
+  - Feedback results review
   - Code Challenge overview: what does this week look like?
 - Code review
   - LinkedLists in practice
