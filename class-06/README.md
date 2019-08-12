@@ -28,6 +28,10 @@
   - "scary but helpful" ~perfect!
 - Interactive pieces of lecture
   - awesome, I will continue!
+- Code review
+  - Solid, please let me know if there are parts of code review that you want more/less of.
+- "the last 30 minutes of lecture"
+  - I don't have a particular scheme for how the last 30 minutes of lecture "should" work, but glad to hear that it's been enjoyable/useful!
 
 ### The Bad/The Least Helpful
 - People find me condescending, and are reluctant to ask questions.
@@ -41,6 +45,12 @@
 - We're moving fast
   - That's intentional--we have a lot to cover!
   - It's OK not to understand all of how Java works yet. More discussion is coming this week, and some pieces of Java we won't cover at all.
+- Request for saving the drawings from lecture
+  - I'll do my best to start saving those images & adding them to the course repo. Please help me remember!
+- Some people don't like daily code challenges with partners
+  - That's only happening for the rest of this week, to continue helping you get acclimated to the process. Starting next week, no partners (or optional partners on Mondays).
+- Asking for more discussion of test cases
+  - I'll attempt more TDD in demos this week.
 
 
 ## Warmup Questions
