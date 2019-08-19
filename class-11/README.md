@@ -9,6 +9,7 @@
 ## Agenda
 - Announcements
     - Don't forget that career coaching is coming on Friday!
+    - Code challenges are individual now
     - Feedback review
 - Code review
     - Stacks & Queues
@@ -17,7 +18,6 @@
     - Using the Spring Initializr
     - Hello, Internet
     - Running Web Apps: Ports, IntelliJ, and other things you will yell at
-    - Heroku Revisited
     - MVC Revisited
 - Lab intro
 
@@ -44,7 +44,7 @@
 ### The Good/The Most Helpful
 
 - People are feeling a turnaround from me: I care about you!
-    - THANK GOODNESS. This is incredibly important to me.
+    - I'm SO GLAD. This is incredibly important to me.
     - Please keep letting me know if you feel anything other than support from me.
 - Demo time with pictures
     - hooray!
