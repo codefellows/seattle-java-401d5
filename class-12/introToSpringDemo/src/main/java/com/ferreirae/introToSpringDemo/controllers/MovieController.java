@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.servlet.view.RedirectView;
 
 import java.sql.Date;
 import java.util.List;
@@ -24,5 +26,12 @@ public class MovieController {
         List<Movie> movies = movieRepository.findAll();
         m.addAttribute("movies", movies);
         return "allMovies";
+    }
+
+    @PostMapping("/movies")
+    public RedirectView addMovie(String title, String director, String releaseDate) {
+        Movie m = new Movie(title, director, Date.valueOf(releaseDate), 0.0, "R");
+        movieRepository.save(m);
+        return new RedirectView("/movies");
     }
 }
