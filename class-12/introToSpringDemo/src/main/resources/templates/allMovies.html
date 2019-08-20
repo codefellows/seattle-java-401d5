@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>All Movies</title>
+</head>
+<body>
+    <h1>All the Movies</h1>
+
+    <div th:each="movie : ${movies}" class="movie">
+        <h3 th:id="${movie.title}" th:text="${movie.title}">Movie Title</h3>
+        <p>
+            Directed by <span th:text="${movie.director}"></span>
+        </p>
+    </div>
+</body>
+</html>
