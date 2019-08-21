@@ -13,7 +13,9 @@ public class Director {
     String firstName;
     String lastName;
 
-    @OneToMany
+    // fetchtype of eager means always fetch this related data
+    // mappedBy matches the name of the instance variable in the Movie class
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "director")
     List<Movie> movies;
 
     public Director(String name) {
@@ -41,6 +43,6 @@ public class Director {
     }
 
     public String toString() {
-        return String.format("%s %s HELLO", this.firstName, this.lastName);
+        return String.format("%s %s", this.firstName, this.lastName);
     }
 }

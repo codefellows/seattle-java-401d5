@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Director</title>
+</head>
+<body>
+    <h1 th:text="${director}"></h1>
+
+    <div th:each="movie : ${director.movies}">
+        <h3 th:text="${movie.title}"></h3>
+    </div>
+
+        <h2>Add a new movie by this director!</h2>
+    <!-- create the route that listens for this post and creates a new movie with the director whose id is in the path -->
+    <form method="POST" th:action="${'/directors/' + director.id + '/movies'}">
+        <input name="title" />
+        <input name="releaseDate" type="date" />
+        <input type="submit" />
+    </form>
+</body>
+</html>

@@ -34,8 +34,12 @@ public class MovieController {
 
     @PostMapping("/movies")
     public RedirectView addMovie(String title, String director, String releaseDate) {
-        Director d =new Director(director);
-        directorRepository.save(d);
+        String[] names = director.split(" ");
+        Director d = directorRepository.findByFirstNameAndLastName(names[0], names[1]);
+        if (d == null) {
+            d = new Director(director);
+            directorRepository.save(d);
+        }
         Movie m = new Movie(title, d, Date.valueOf(releaseDate), 0.0, "R");
         movieRepository.save(m);
         return new RedirectView("/movies");

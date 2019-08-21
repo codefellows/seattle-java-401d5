@@ -10,7 +10,7 @@
     <div th:each="movie : ${movies}" class="movie">
         <h3 th:id="${movie.title}" th:text="${movie.title}">Movie Title</h3>
         <p>
-            Directed by <span th:text="${movie.director}"></span> (automatic toString ftw)
+            <a th:href="${ '/directors/' + movie.director.id}">Directed by <span th:text="${movie.director}"></span></a>
         </p>
     </div>
 
