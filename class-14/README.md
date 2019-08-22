@@ -1,4 +1,4 @@
-# Class 15: Integration Testing and Trees
+# Class 14: Integration Testing and Trees
 
 ## Agenda
 - Announcements
