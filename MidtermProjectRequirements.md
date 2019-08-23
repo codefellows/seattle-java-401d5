@@ -26,4 +26,4 @@ Specifically, you must:
     - Must contain integration tests for at least all GET request endpoints.
 
 4. Deploy your application to the world.
-    - Your application must be available at a custom domain name, using Heroku (recommended) or similar.
+    - Your application must be available at a custom domain name, using AWS ElasticBeanstalk or similar.
