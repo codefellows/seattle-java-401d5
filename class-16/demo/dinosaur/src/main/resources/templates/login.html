@@ -5,6 +5,7 @@
     <title>Log In</title>
 </head>
 <body>
+<div th:replace="fragments/nav :: nav"></div>
     <form method="POST" action="/login">
         <input name="username" />
         <input type="password" name="password" />

@@ -5,6 +5,7 @@
     <title>Sign Up</title>
 </head>
 <body>
+<div th:replace="fragments/nav :: nav"></div>
 <form method="POST" action="/users">
     <label for="fullname">Full name: </label><input name="fullname" id="fullname" />
     <label for="username"> Username: </label><input name="username" id="username" />

@@ -3,11 +3,9 @@ package com.ferreirae.dinosaur.models;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Collection;
+import java.util.List;
 
 @Entity
 public class ApplicationUser implements UserDetails {
@@ -17,6 +15,22 @@ public class ApplicationUser implements UserDetails {
     Long id;
     String username;
     String password;
+
+    // normal, boring, one-to-many annotations
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "owner")
+    List<Dinosaur> dinosaurs;
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public List<Dinosaur> getDinosaurs() {
+        return this.dinosaurs;
+    }
 
     String fullName;
 

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adopt a Dinosaur</title>
+</head>
+<body>
+    <div th:replace="fragments/nav :: nav"></div>
+    <h2>So, you want to adopt a dinosaur...</h2>
+    <form method="post" action="/dinosaurs/adopt">
+        <label for="name">Name</label><input id="name" name="name" />
+        <label for="species">Species</label><input id="species" name="species" />
+        <label for="eatsMeat">Eats meat</label><input id="eatsMeat" name="eatsMeat" type="checkbox" />
+        <input type="submit" />
+    </form>
+</body>
+</html>

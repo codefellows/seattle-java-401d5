@@ -3,6 +3,7 @@ package com.ferreirae.dinosaur.config;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -34,9 +35,15 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .cors().disable()
                 .csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/*").permitAll()
+                    // things that match these 4 strings, allow anyone
+                    .antMatchers("/", "/login", "/signup", "/error").permitAll()
+                    // a POST request to things that match /users, allow anyone
+                    .antMatchers(HttpMethod.POST, "/users").permitAll()
+                    // any other request, you have to be logged in
+                    .anyRequest().authenticated()
                 .and()
                 .formLogin()
+                    .loginPage("/login")
                 .and()
                 .logout();
     }
