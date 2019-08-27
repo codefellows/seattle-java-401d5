@@ -20,6 +20,14 @@ public class ApplicationUser implements UserDetails {
 
     String fullName;
 
+    public ApplicationUser(String username, String password, String fullName) {
+        this.username = username;
+        this.password = password;
+        this.fullName = fullName;
+    }
+
+    public ApplicationUser() {}
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return null;

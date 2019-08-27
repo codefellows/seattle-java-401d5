@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class Tree<E> {
   Node<E> root;
@@ -9,6 +10,29 @@ public class Tree<E> {
 
   public Tree(Node<E> root) {
     this.root = root;
+  }
+
+  public void addAtNextOpenSpot(E value) {
+      Node<E> newNode = new Node<>(value, null, null);
+      if (this.root == null) {
+          this.root = newNode;
+          return;
+      }
+      LinkedList<Node<E>> nodesToCheck = new LinkedList<>();
+      nodesToCheck.addLast(this.root);
+      while(true) {
+          Node<E> current = nodesToCheck.removeFirst();
+          if(current.left == null) {
+              current.left = newNode;
+              return;
+          } else if (current.right == null) {
+              current.right = newNode;
+              return;
+          } else {
+              nodesToCheck.addLast(current.left);
+              nodesToCheck.addLast(current.right);
+          }
+      }
   }
 
   public static void main(String[] args) {
@@ -23,26 +47,30 @@ public class Tree<E> {
     
     // // note: nodes does not use the above-created nodes
     // // it's okay
-    // Node<Integer> nodes = new Node<>(3,
+    // Node<Object> nodes = new Node<>(3,
     //   new Node<>(2, 
     //     new Node<>(7, null, null),
     //     null),
     //   new Node<>(6, null, null)
     // );
-    // Tree<Integer> t = new Tree<>(nodes);
-    // System.out.println(t.inorder());
-
-    BinarySearchTree t = new BinarySearchTree();
-    //   5
-    //  / \
-    // 3   7
-    // /
-    // 1
-    t.addRec(5);
-    t.addRec(3);
-    t.addRec(1);
-    t.addRec(7);
+    Tree<Object> t = new Tree<>();
+    t.addAtNextOpenSpot(3);
+    t.addAtNextOpenSpot(2);
+    t.addAtNextOpenSpot(6);
+    t.addAtNextOpenSpot(7);
     System.out.println(t.inorder());
+
+    // BinarySearchTree t = new BinarySearchTree();
+    // //   5
+    // //  / \
+    // // 3   7
+    // // /
+    // // 1
+    // t.addRec(5);
+    // t.addRec(3);
+    // t.addRec(1);
+    // t.addRec(7);
+    // System.out.println(t.inorder());
   }
 
   public ArrayList<E> inorder() {

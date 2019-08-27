@@ -6,5 +6,13 @@
 </head>
 <body>
     <h1>Dinosaurs!</h1>
+    <div th:if="${user}">
+        Hello, <span th:text="${user.name}"></span>!
+        <a href="logout">Log out</a>
+    </div>
+    <div th:unless="${user}">
+        <a href="/login">Log in</a>
+        <a href="/signup">Sign up</a>
+    </div>
 </body>
 </html>
