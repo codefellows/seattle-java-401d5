@@ -57,8 +57,9 @@ public class Tree<E> {
     t.addAtNextOpenSpot(3);
     t.addAtNextOpenSpot(2);
     t.addAtNextOpenSpot(6);
-    t.addAtNextOpenSpot(7);
-    System.out.println(t.inorder());
+    t.addAtNextOpenSpot(10);
+    t.addAtNextOpenSpot(15);
+    System.out.println(fizzBuzzTree(t));
 
     // BinarySearchTree t = new BinarySearchTree();
     // //   5
@@ -91,6 +92,32 @@ public class Tree<E> {
       ans.addAll(rightAns);
       return ans;
     }
+  }
+
+  public static Tree<Object> fizzBuzzTree(Tree<Object> treeToFizzBuzz) {
+      fizzBuzz(treeToFizzBuzz.root);
+      return treeToFizzBuzz;
+  }
+
+  private static void fizzBuzz(Node<Object> root) {
+      if (root != null) {
+          // do the normal fizzbuzz thing to the root
+          if ((int)root.value % 15 == 0) {
+              root.value = "Fizz Buzz";
+          } else if ((int)root.value % 5 == 0) {
+              root.value = "Buzz";
+          } else if ((int)root.value % 3 == 0) {
+              root.value = "Fizz";
+          }
+          // do the fizzbuzz to the left subtree
+          fizzBuzz(root.left);
+          // do the fizzbuzz to the right
+          fizzBuzz(root.right);
+      }
+  }
+
+  public String toString() {
+      return this.root.toString();
   }
 }
 
@@ -184,5 +211,13 @@ class Node<T> {
     this.value = value;
     this.left = left;
     this.right = right;
+  }
+
+  public String toString() {
+      return String.format("( %s %s %s )", 
+        this.left == null ? "." : this.left.toString(),
+        this.value,
+        this.right ==  null? "." : this.right.toString()
+      );
   }
 }
