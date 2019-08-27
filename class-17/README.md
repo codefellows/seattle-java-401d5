@@ -5,6 +5,9 @@
 - Code review
 - Daily Systems: man pages
 - Lecture
+    - Thymeleaf fragments & templating
+    - Adding a model
+    - Authorization
 - Lab intro
 
 ## Learning Objectives
