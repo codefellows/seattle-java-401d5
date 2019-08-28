@@ -8,8 +8,8 @@
     <div th:replace="fragments/nav :: nav"></div>
     <h3 th:text="${viewedUser.fullName}"></h3>
     <ul>
-        <li th:each="dinosaur : ${viewedUser.dinosaurs}" th:text="${dinosaur}">
-
+        <li th:each="dinosaur : ${viewedUser.dinosaurs}" >
+            <span th:text="${dinosaur}"></span>
         </li>
     </ul>
 </body>

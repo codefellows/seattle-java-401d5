@@ -6,6 +6,7 @@
         <nav th:if="${user}">
             Hello, <span th:text="${user.name}"></span>!
             <a href="/dinosaurs/adopt">Adopt a dino</a>
+            <a href="/dinosaurs/likes">Add dinosaur likes</a>
             <a href="/logout">Log out</a>
         </nav>
         <nav th:unless="${user}">
