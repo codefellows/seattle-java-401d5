@@ -20,6 +20,6 @@ Deploying a web app to EC2 traditionally requires writing a startup script in Ba
 6. Under "More configuration options", add a database. Pick postgres as your engine, and specify a good, secure username and password.
 7. Hit "create environment". (This takes about 15 minutes.)
 8. Go to the "Configuration" page. Under "Database", make note of the "database endpoint".
-8. Set environment variables for DATABASE_USERNAME and DATABASE_PASSWORD, with the good, secure username and password you specified earlier. Also create the DATABASE_URL environment variable, with `jbdc:postgresql://{database endpoint from the previous step goes here}/ebdb`
+8. Set environment variables for DATABASE_USERNAME and DATABASE_PASSWORD, with the good, secure username and password you specified earlier. Also create the DATABASE_URL environment variable, with `jdbc:postgresql://{database endpoint from the previous step goes here}/ebdb`
 9. Upload your .jar file.
 10. victory?
