@@ -1,7 +1,7 @@
 # Deployment with EC2 and RDS
 
 ## Background
-Deploying a web app to EC2 traditionally requires writing a startup script in Bash to do things like copy your app's .jar file from S3, install dependencies, set environment variables, set up Apache with port forwarding from 80 to your app, and start up Apache. This is a lot of manual effort, and we can use Elastic Beanstalk for deployment to avoid this manual work, but we do NOT want to use Elastic Beanstalk for database; it limits our possibilities and can lead to bad situations. This doc walks through the process of setting up RDS manually, deploying to EC2 with Elastic Beanstalk, and connecting the two.
+Deploying a web app to EC2 traditionally requires writing a startup script in Bash to do things like copy your app's .jar file from S3, install dependencies, set environment variables, set up Apache with port forwarding from 80 to your app, and start up Apache. This is a lot of manual effort, and we can use Elastic Beanstalk for deployment to avoid this manual work. This doc walks through the process of deploying to EC2 and RDS with Elastic Beanstalk, and connecting your Java code to your database.
 
 ## Steps
 
