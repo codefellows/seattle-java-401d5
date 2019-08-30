@@ -23,7 +23,7 @@ Specifically, you must:
 
 3. Test your application.
     - Must contain unit tests for all getters and setters, as well as any utility methods.
-    - Must contain integration tests for at least all GET request endpoints.
+    - Must contain integration tests for at least all non-authenticated GET request endpoints.
 
 4. Deploy your application to the world.
     - Your application must be available at a custom domain name, using AWS ElasticBeanstalk or similar.
