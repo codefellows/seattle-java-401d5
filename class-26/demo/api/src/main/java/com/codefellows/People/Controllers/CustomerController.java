@@ -21,20 +21,6 @@ public class CustomerController {
         return (List) customerRepository.findAll();
     }
 
-    // NEW
-//    @PostMapping("/customers")
-//    public Customer createCustomer(
-//            @RequestParam("name") String name,
-//            @RequestParam("old") Boolean old
-//    ){
-//
-//        Customer customer = new Customer();
-//        customer.setName(name);
-//        customer.setOld( Boolean.valueOf(old) );
-//        customerRepository.save(customer);
-//        return customer;
-//    }
-
     @PostMapping("/customers")
     public Customer addNewUser (@RequestBody Customer customer) {
         Customer c = new Customer();
