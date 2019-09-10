@@ -47,6 +47,11 @@ The reason we're starting small on this server is because the main focus for the
 * Once you can confirm that it is working this way also, setup and deploy to Elastic Beanstalk using the CLI
   * `eb init` (choose the `us-west-2` and `Java` options)
   * `eb create` to create a runtime environment (give it a unique name) -- use the 'classic' load balance option.
+  * Edit the `.elasticbeanstalk/config.yml` file and add in the following lines at the bottom, substituting the path to your actual .jar file
+    ```
+    deploy:
+      artifact: ./build/libs/People-0.0.1-SNAPSHOT.jar
+    ```
   * `eb deploy` to deploy this to Elastic Beanstalk.
 * Once it's completed, check your work, by visiting the customers URL with your API
   * [http://{url-provided-by-aws}/api/v1/customers](http://{url-provided-by-aws}/api/v1/customers)
