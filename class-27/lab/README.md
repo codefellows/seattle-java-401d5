@@ -15,7 +15,7 @@ Continue working in your `taskmaster` repo. Use as many DynamoDB features as you
 ## Feature Tasks
 
 - A user should be able to make a `GET` request to `/tasks` and receive JSON data representing all of the tasks.
-    - Each task should have a `title`, `description`, `assignee`, and `status`, all of which are strings, as well as an `id`.
+    - Each task should have a `title`, `description`, `assignee`, and `status`, all of which are strings, as well as an `id` and an array to store `history`.
 - A user should be able to make a `GET` request to `/users/{name}/tasks` and receive JSON data representing all of the tasks assigned to that user.
     - This should work (i.e. return an empty array) if the requested username does not have any assigned tasks.
 - A user should be able to make a `POST` request to `/tasks` with body parameters for `title`, `description`, and `assignee` to add a new task.
@@ -24,6 +24,7 @@ Continue working in your `taskmaster` repo. Use as many DynamoDB features as you
     - It should not matter whether or not that assignee is already in the database.
 - A user should be able to make a `PUT` request to `/tasks/{id}/state` to advance the status of that task.
     - Tasks should advance from `Available` -> `Assigned` -> `Accepted` -> `Finished`.
+    - As the task advances, add an entry to the `history` array to note the advancement. Include the date and the action that was taken.
 - A user should be able to make a `PUT` request to `/tasks/{id}/assign/{assignee}` to assign a particular user to a task.
     - Changing the assignee should set the task's state to `Assigned`.
     - This should work whether or not that assignee name is already in the database.
