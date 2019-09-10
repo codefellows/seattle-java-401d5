@@ -7,4 +7,4 @@
   - Change the table name to match your Dynamo DB Table Name
   - Change the field names in the `params{}` object in the `createRecord()` function to match your data model fields.
 - Run `node load.js ##` where ## is how many records you want to load to your table.
-- Win.
+- Wi
