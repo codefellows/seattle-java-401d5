@@ -12,6 +12,7 @@ Let's use Lambda to handle database changes in real time!
 - It should receive the same object that your API was handling earlier.
 - Repeat for "PUT" / update functionality
 - Do NOT handle images at this point.
+- You might want to keep this [warm](https://read.acloud.guru/how-to-keep-your-lambda-functions-warm-9d7e1aa6e2f0)...
 
 ### Javascript or Python
 - Create a lambda function that will handle a [Dynamo Event](https://docs.aws.amazon.com/lambda/latest/dg/with-ddb.html)
