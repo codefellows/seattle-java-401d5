@@ -1,0 +1,13 @@
+body {
+    label {
+        background: #eee;
+        display:flex;
+        flex-direction:row;
+        margin: .5em;
+        padding: .5em;
+
+        span {
+           margin: 0 1em;
+        }
+    }
+}
