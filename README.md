@@ -31,7 +31,7 @@ There are several types of assignments that are required for this course, and th
 * Readings: All readings are visible at the beginning of the course. Each reading is due by the start of the lecture that covers that reading, and locks (no late submissions) at midnight on that day.
 * Daily Journals: Each daily journal is unlocked for 24 hours total.
 * Career Coaching: Career coaching assignments do not lock, but are used during career coaching workshops; ensure you have completed the assignments by the start of the workshop.
-* Prework: You should have already finished this; if not, you should reach out to your instructor, and finish any remaining items ASAP.
+* Pre-work: You should have already finished this; if not, you should reach out to your instructor, and finish any remaining items ASAP.
 
 #### Graded out of points
 * Code Challenges: Each code challenge is released at 5pm, to be worked on that night. The code challenge is due the next day by the start of lecture. You may resubmit code challenges for up to 10 days after the assignment is due; code challenges lock after 10 days.
